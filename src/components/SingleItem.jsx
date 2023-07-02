@@ -1,11 +1,12 @@
 import React from "react";
 
-const SingleItem = ({ key, item, removeItem }) => {
+const SingleItem = ({ item, removeItem, editItem }) => {
   return (
     <div className="single-item">
       <input
         type="checkbox"
         checked={item.completed}
+        onChange={() => editItem(item.id)}
         //   onChange={()=>()}
       />
       <p
