@@ -7,7 +7,6 @@ const SingleItem = ({ item, removeItem, editItem }) => {
         type="checkbox"
         checked={item.completed}
         onChange={() => editItem(item.id)}
-        //   onChange={()=>()}
       />
       <p
         style={{

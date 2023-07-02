@@ -51,7 +51,7 @@ function App() {
 
   const editItem = (itemId) => {
     const newItems = items.map((item) => {
-      if (itemId.id == itemId) {
+      if (item.id == itemId) {
         const newItem = { ...item, completed: !item.completed };
         return newItem;
       }
